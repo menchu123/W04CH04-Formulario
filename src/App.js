@@ -2,8 +2,8 @@ import "./App.css";
 
 function App() {
   return (
-    <section className="form-container container">
-      <form>
+    <section className="container d-flex justify-content-center align-items-center mh-100">
+      <form className="form-container">
         <div className="form-group">
           <label htmlFor="form_name">Name</label>
           <input
@@ -42,6 +42,10 @@ function App() {
             ></input>
           </div>
         </div>
+        <section className="navigation d-flex justify-content-between">
+          <button class="btn btn-primary mt-4">Go back</button>
+          <button class="btn btn-primary mt-4">Next</button>
+        </section>
       </form>
     </section>
   );
