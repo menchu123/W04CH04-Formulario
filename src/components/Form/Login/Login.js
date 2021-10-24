@@ -8,6 +8,7 @@ const Login = () => {
           className="form-control"
           id="form_username-login"
           placeholder="Enter username"
+          required
         ></input>
       </div>
       <div className="form-group">
@@ -17,6 +18,7 @@ const Login = () => {
           className="form-control"
           id="form_password-login"
           placeholder="Enter your password"
+          required
         ></input>
       </div>
       <div className="custom-control custom-checkbox mt-2">
@@ -24,6 +26,7 @@ const Login = () => {
           type="checkbox"
           className="custom-control-input"
           id="remember-password"
+          required
         ></input>
         <label className="custom-control-label m-2" htmlFor="remember-password">
           Remember password

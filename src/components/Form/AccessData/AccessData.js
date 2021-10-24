@@ -14,6 +14,7 @@ const AccessData = () => {
           placeholder="Enter username"
           value={userData.username}
           onChange={changeData}
+          required
         ></input>
       </div>
       <div className="form-group">
@@ -25,6 +26,7 @@ const AccessData = () => {
           placeholder="Enter your password"
           value={userData.password}
           onChange={changeData}
+          required
         ></input>
       </div>
       <div className="form-group">
@@ -34,6 +36,7 @@ const AccessData = () => {
           className="form-control"
           id="form_password-repeat"
           placeholder="Repeat your password"
+          required
         ></input>
       </div>
     </>

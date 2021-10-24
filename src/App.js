@@ -21,12 +21,32 @@ function App() {
       [event.target.id]: event.target.value,
     });
   };
+
+  const [page, setPage] = useState(0);
+
+  const next = () => {
+    if (page >= 0 && page <= 1) {
+      setPage(page + 1);
+    } else {
+      console.log(userData);
+    }
+  };
+
+  const back = () => {
+    if (page >= 0 && page <= 1) {
+      setPage(page - 1);
+    }
+  };
+
   return (
     <Context.Provider
       value={{
         userData,
         setUserData,
         changeData,
+        next,
+        back,
+        page,
       }}
     >
       <section className="container d-flex justify-content-center align-items-center mh-100">

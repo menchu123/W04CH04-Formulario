@@ -14,6 +14,7 @@ const PersonalData = () => {
           placeholder="Enter name"
           value={userData.firstName}
           onChange={changeData}
+          required
         ></input>
       </div>
       <div className="form-group">
@@ -25,6 +26,7 @@ const PersonalData = () => {
           placeholder="Enter your last name"
           value={userData.lastName}
           onChange={changeData}
+          required
         ></input>
       </div>
       <div className="row">
@@ -36,6 +38,7 @@ const PersonalData = () => {
             id="birthDate"
             value={userData.birthDate}
             onChange={changeData}
+            required
           ></input>
         </div>
         <div className="form-group col-2">
@@ -59,6 +62,7 @@ const PersonalData = () => {
           placeholder="Enter your email"
           value={userData.email}
           onChange={changeData}
+          required
         ></input>
       </div>
     </>
