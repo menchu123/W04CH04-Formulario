@@ -2,7 +2,7 @@ import { useContext } from "react";
 import Context from "../../Context/Context";
 
 const PersonalData = () => {
-  const { userData, setUserData, changeData } = useContext(Context);
+  const { userData, changeData } = useContext(Context);
   return (
     <>
       <div className="form-group">

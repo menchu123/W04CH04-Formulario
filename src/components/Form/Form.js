@@ -1,3 +1,4 @@
+import Pagination from "../Pagination/Pagination";
 import AccessData from "./AccessData/AccessData";
 import Login from "./Login/Login";
 import PersonalData from "./PersonalData/PersonalData";
@@ -8,10 +9,7 @@ const Form = () => {
       <PersonalData />
       <AccessData />
       <Login />
-      <section className="navigation d-flex justify-content-between">
-        <button className="btn btn-primary mt-4">Go back</button>
-        <button className="btn btn-primary mt-4">Next</button>
-      </section>
+      <Pagination />
     </form>
   );
 };

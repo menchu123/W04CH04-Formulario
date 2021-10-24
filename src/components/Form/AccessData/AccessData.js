@@ -1,22 +1,30 @@
+import { useContext } from "react";
+import Context from "../../Context/Context";
+
 const AccessData = () => {
+  const { userData, changeData } = useContext(Context);
   return (
     <>
       <div className="form-group">
-        <label htmlFor="form_username">Username</label>
+        <label htmlFor="username">Username</label>
         <input
           type="text"
           className="form-control"
-          id="form_username"
+          id="username"
           placeholder="Enter username"
+          value={userData.username}
+          onChange={changeData}
         ></input>
       </div>
       <div className="form-group">
-        <label htmlFor="form_password">Password</label>
+        <label htmlFor="password">Password</label>
         <input
           type="password"
           className="form-control"
-          id="form_password"
+          id="password"
           placeholder="Enter your password"
+          value={userData.password}
+          onChange={changeData}
         ></input>
       </div>
       <div className="form-group">
