@@ -1,38 +1,51 @@
+import { useContext } from "react";
+import Context from "../../Context/Context";
+
 const PersonalData = () => {
+  const { userData, changeData } = useContext(Context);
   return (
     <>
       <div className="form-group">
-        <label htmlFor="form_name">Name</label>
+        <label htmlFor="firstName">Name</label>
         <input
           type="text"
           className="form-control"
-          id="form_name"
+          id="firstName"
           placeholder="Enter name"
+          value={userData.firstName}
+          onChange={changeData}
+          required
         ></input>
       </div>
       <div className="form-group">
-        <label htmlFor="form_lastname">Last Name</label>
+        <label htmlFor="lastName">Last Name</label>
         <input
           type="text"
           className="form-control"
-          id="form_lastname"
+          id="lastName"
           placeholder="Enter your last name"
+          value={userData.lastName}
+          onChange={changeData}
+          required
         ></input>
       </div>
       <div className="row">
         <div className="form-group col-10">
-          <label htmlFor="form_birthdate">Date of Birth</label>
+          <label htmlFor="birthDate">Date of Birth</label>
           <input
             type="date"
             className="form-control"
-            id="form_birthdate"
+            id="birthDate"
+            value={userData.birthDate}
+            onChange={changeData}
+            required
           ></input>
         </div>
         <div className="form-group col-2">
           <label htmlFor="age">Age</label>
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             id="age"
             value="27"
             readOnly
@@ -40,13 +53,16 @@ const PersonalData = () => {
         </div>
       </div>
       <div className="form-group">
-        <label htmlFor="form_email">Email</label>
+        <label htmlFor="email">Email</label>
         <input
           type="email"
           className="form-control"
-          name="email"
+          id="email"
           pattern="[^ @]*@[^ @]*"
           placeholder="Enter your email"
+          value={userData.email}
+          onChange={changeData}
+          required
         ></input>
       </div>
     </>
