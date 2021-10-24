@@ -3,15 +3,6 @@ import Login from "./Login/Login";
 import PersonalData from "./PersonalData/PersonalData";
 
 const Form = () => {
-  const initialData = {
-    firstName: "",
-    lastName: "",
-    birthDate: "",
-    email: "",
-    username: "",
-    password: "",
-  };
-
   return (
     <form className="form-container">
       <PersonalData />
