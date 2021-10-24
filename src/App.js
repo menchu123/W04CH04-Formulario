@@ -33,7 +33,7 @@ function App() {
   };
 
   const back = () => {
-    if (page >= 0 && page <= 1) {
+    if (page >= 0 && page <= 2) {
       setPage(page - 1);
     }
   };
