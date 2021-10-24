@@ -20,11 +20,11 @@ const AccessData = () => {
         ></input>
       </div>
       <div className="form-group">
-        <label htmlFor="form_password">Repeat your password</label>
+        <label htmlFor="form_password-repeat">Repeat your password</label>
         <input
           type="password"
           className="form-control"
-          id="form_password"
+          id="form_password-repeat"
           placeholder="Repeat your password"
         ></input>
       </div>

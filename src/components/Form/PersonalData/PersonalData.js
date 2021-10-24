@@ -32,7 +32,7 @@ const PersonalData = () => {
           <label htmlFor="age">Age</label>
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             id="age"
             value="27"
             readOnly
